@@ -3,7 +3,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     renderToday();
     renderTomorrow();
-    renderAllPredictions();
+    renderTomorrowPredictions();
     renderFavorites();
 });
 
@@ -187,21 +187,21 @@ function renderTomorrow() {
     });
 }
 
-// 渲染今天+明天所有比赛的详细分析预测
-function renderAllPredictions() {
+// 渲染明天比赛的详细分析预测（今天已完场的不预测）
+function renderTomorrowPredictions() {
     const today = getTodayStr();
     const tomorrow = getTomorrowStr();
-    const allMatches = MATCHUPS.filter(m => m.date === today || m.date === tomorrow);
+    const tomorrowMatches = MATCHUPS.filter(m => m.date === tomorrow);
 
     const analysisContainer = document.getElementById('analysisCards');
     const section = document.getElementById('analysisSection');
 
-    if (allMatches.length === 0) {
+    if (tomorrowMatches.length === 0) {
         section.style.display = 'none';
         return;
     }
 
-    allMatches.forEach((match, i) => {
+    tomorrowMatches.forEach((match, i) => {
         const homeTeam = TEAMS.find(t => t.id === match.home);
         const awayTeam = TEAMS.find(t => t.id === match.away);
         const isToday = match.date === today;
@@ -210,8 +210,6 @@ function renderAllPredictions() {
         const card = document.createElement('div');
         card.className = 'analysis-card animate-in';
         card.style.animationDelay = `${i * 0.08}s`;
-
-        // 基于 Elo + Poisson 模型生成精准比分预测
         const homeExp = match.analysis.expectedGoals.home;
         const awayExp = match.analysis.expectedGoals.away;
         const totalExp = homeExp + awayExp;
@@ -297,7 +295,7 @@ function renderAllPredictions() {
                 </div>
                 <div>
                     <span style="color:var(--gold);font-size:12px;margin-right:8px;">${match.date} ${match.time} 北京时间</span>
-                    <span style="color:var(--text-dim);font-size:13px;margin-right:8px;">${dateLabel} · 待开赛</span>
+                    <span style="color:var(--text-dim);font-size:13px;margin-right:8px;">明日 · 待开赛</span>
                     <span style="cursor:pointer;color:var(--text-dim);font-size:18px;margin-left:12px;">▼</span>
                 </div>
             </div>
