@@ -100,12 +100,12 @@ const MATCHUPS = [
     },
     {
         id: 5, round: '1/16决赛 · 第五场', date: '7月1日', time: '01:00', venue: '待确认',
-        home: 'civ', away: 'nor', score: '-', status: 'pending', winner: null, confidence: 0,
+        home: 'civ', away: 'nor', score: '1-2', status: 'finished', winner: 'away', confidence: 43,
         analysis: {
             homeAdv: '科特迪瓦小组赛4-2厄瓜多尔、库拉索，阿马德绝杀',
             awayAdv: '挪威小组赛8-7伊拉克、塞内加尔，哈兰德双响',
             keyFactor: '哈兰德的进球能力 vs 科特迪瓦的团队配合',
-            tip: '强强对话，挪威哈兰德有望延续火热状态',
+            tip: '哈宝绝杀，挪威淘汰赛首胜',
             winProb: { home: 42.0, draw: 25.0, away: 33.0 },
             scoreProbs: ['1-1(11.7%)', '2-1(8.7%)', '1-0(8.5%)', '2-0(6.8%)'],
             expectedGoals: { home: 1.50, away: 1.37 },
