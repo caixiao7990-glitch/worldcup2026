@@ -107,10 +107,10 @@ const MATCHUPS = [
             keyFactor: '哈兰德的进球能力 vs 科特迪瓦的团队配合',
             tip: '哈宝绝杀，挪威淘汰赛首胜'
             winProb: { home: 42.0, draw: 25.0, away: 33.0 },
-            scoreProbs: ['1-1(11.7%)', '2-1(8.7%)', '1-0(8.5%)', '2-0(6.8%)'],
-            expectedGoals: { home: 1.50, away: 1.37 },
+            scoreProbs: ['1-1(9.5%)', '1-2(8.2%)', '2-1(8.1%)', '2-2(7.0%)', '0-1(5.6%)'],
+            expectedGoals: { home: 1.70, away: 1.73 },
             predScores: ['1-1', '2-1'],
-            upsetScore: '0-1'
+            predScores: ['1-1', '1-2'],
         }
     },
     {
@@ -122,10 +122,10 @@ const MATCHUPS = [
             keyFactor: '姆巴佩的个人能力 vs 瑞典的整体防守',
             tip: '姆巴佩双响，法国完胜瑞典'
             winProb: { home: 62.0, draw: 19.0, away: 19.0 },
-            scoreProbs: ['2-1(9.5%)', '1-1(8.2%)', '2-0(7.7%)', '3-1(6.2%)'],
-            expectedGoals: { home: 2.32, away: 1.23 },
+            scoreProbs: ['2-1(8.1%)', '3-1(7.7%)', '2-0(5.8%)', '1-1(5.7%)', '2-2(5.7%)'],
+            expectedGoals: { home: 2.84, away: 1.41 },
             predScores: ['2-1', '1-1'],
-            upsetScore: '0-1'
+            predScores: ['2-1', '3-1'],
         }
     },
     {
@@ -137,10 +137,10 @@ const MATCHUPS = [
             keyFactor: '墨西哥的零封防守 vs 厄瓜多尔的进攻乏力',
             tip: '墨西哥防守占优，小比分概率大''
             winProb: { home: 65.0, draw: 20.0, away: 15.0 },
-            scoreProbs: ['1-0(28.0%)', '0-0(25.7%)', '2-0(15.3%)', '1-1(8.5%)'],
-            expectedGoals: { home: 1.09, away: 0.27 },
+            scoreProbs: ['1-0(24.2%)', '0-0(18.5%)', '2-0(15.8%)', '1-1(9.2%)', '0-1(7.0%)'],
+            expectedGoals: { home: 1.31, away: 0.38 },
             predScores: ['1-0', '0-0'],
-            upsetScore: '0-1'
+            predScores: ['1-0', '0-0'],
         }
     },
     {
@@ -152,10 +152,10 @@ const MATCHUPS = [
             keyFactor: '刚果（金）的冲击力 vs 英格兰的战术纪律',
             tip: '英格兰整体实力更强，但刚果（金）不容小觑''
             winProb: { home: 52.0, draw: 25.0, away: 23.0 },
-            scoreProbs: ['1-0(15.8%)', '1-1(13.0%)', '0-0(12.9%)', '2-1(8.5%)'],
-            expectedGoals: { home: 1.23, away: 0.82 },
+            scoreProbs: ['1-0(12.5%)', '1-1(12.1%)', '2-0(9.6%)', '2-1(9.3%)', '0-0(8.1%)'],
+            expectedGoals: { home: 1.54, away: 0.97 },
             predScores: ['1-0', '1-1'],
-            upsetScore: '0-1'
+            predScores: ['1-0', '1-1'],
         }
     },
     {
@@ -167,10 +167,10 @@ const MATCHUPS = [
             keyFactor: '比利时的老将经验 vs 塞内加尔的反击速度',
             tip: '比利时实力占优，丁丁有望延续好状态''
             winProb: { home: 46.0, draw: 26.0, away: 28.0 },
-            scoreProbs: ['1-1(11.1%)', '2-1(9.1%)', '1-0(8.1%)', '2-0(7.0%)'],
-            expectedGoals: { home: 1.64, away: 1.37 },
+            scoreProbs: ['1-1(9.4%)', '2-1(8.8%)', '1-2(7.3%)', '2-2(6.9%)', '1-0(6.0%)'],
+            expectedGoals: { home: 1.89, away: 1.56 },
             predScores: ['1-1', '2-1'],
-            upsetScore: '0-1'
+            predScores: ['1-1', '2-1'],
         }
     },
     {
@@ -182,10 +182,10 @@ const MATCHUPS = [
             keyFactor: '波黑的进攻火力 vs 美国的东道主优势',
             tip: '美国有望打破淘汰赛不胜魔咒''
             winProb: { home: 50.0, draw: 25.0, away: 25.0 },
-            scoreProbs: ['1-1(10.2%)', '2-1(9.7%)', '1-0(8.3%)', '2-0(7.2%)'],
-            expectedGoals: { home: 1.91, away: 1.23 },
+            scoreProbs: ['2-1(9.6%)', '1-1(9.0%)', '2-0(7.5%)', '1-0(7.0%)', '3-1(6.8%)'],
+            expectedGoals: { home: 2.14, away: 1.28 },
             predScores: ['1-1', '2-1'],
-            upsetScore: '0-1'
+            predScores: ['2-1', '1-1'],
         }
     },
     {
@@ -197,10 +197,10 @@ const MATCHUPS = [
             keyFactor: '西班牙的中场控制 vs 奥地利的快速转换',
             tip: '西班牙实力明显占优，亚马尔有望继续发光''
             winProb: { home: 55.0, draw: 23.0, away: 22.0 },
-            scoreProbs: ['1-0(14.7%)', '1-1(12.1%)', '2-0(11.1%)', '2-1(8.0%)'],
-            expectedGoals: { home: 1.50, away: 0.82 },
+            scoreProbs: ['1-0(11.3%)', '1-1(11.0%)', '2-0(10.1%)', '2-1(9.8%)', '0-0(6.3%)'],
+            expectedGoals: { home: 1.79, away: 0.97 },
             predScores: ['1-0', '1-1'],
-            upsetScore: '0-1'
+            predScores: ['1-0', '1-1'],
         }
     },
     {
@@ -212,10 +212,10 @@ const MATCHUPS = [
             keyFactor: '魔笛 vs C罗，两代传奇的最后世界杯',
             tip: 'C罗有望在最后的世界杯留下经典''
             winProb: { home: 55.0, draw: 23.0, away: 22.0 },
-            scoreProbs: ['1-0(14.7%)', '1-1(12.1%)', '2-0(11.1%)', '2-1(8.0%)'],
-            expectedGoals: { home: 1.50, away: 0.82 },
+            scoreProbs: ['1-0(11.1%)', '1-1(10.8%)', '2-0(10.2%)', '2-1(9.9%)', '3-0(6.2%)'],
+            expectedGoals: { home: 1.83, away: 0.97 },
             predScores: ['1-0', '1-1'],
-            upsetScore: '0-1'
+            predScores: ['1-0', '1-1'],
         }
     },
     {
@@ -227,10 +227,10 @@ const MATCHUPS = [
             keyFactor: '阿尔及利亚的进攻 vs 瑞士的防守反击',
             tip: '势均力敌的对决，瑞士经验略占优''
             winProb: { home: 48.0, draw: 25.0, away: 27.0 },
-            scoreProbs: ['1-1(10.4%)', '2-1(9.9%)', '1-0(9.5%)', '2-0(7.8%)'],
-            expectedGoals: { home: 1.91, away: 1.09 },
+            scoreProbs: ['2-1(9.8%)', '1-1(9.0%)', '2-0(8.7%)', '1-0(8.0%)', '3-1(7.1%)'],
+            expectedGoals: { home: 2.18, away: 1.13 },
             predScores: ['1-1', '2-1'],
-            upsetScore: '0-1'
+            predScores: ['2-1', '1-1'],
         }
     },
     {
@@ -242,10 +242,10 @@ const MATCHUPS = [
             keyFactor: '埃及的法老进攻线 vs 澳大利亚的身体对抗',
             tip: '势均力敌，埃及略占优势''
             winProb: { home: 38.0, draw: 28.0, away: 34.0 },
-            scoreProbs: ['0-0(19.4%)', '0-1(18.6%)', '1-0(13.2%)', '1-1(10.5%)'],
-            expectedGoals: { home: 0.68, away: 0.96 },
+            scoreProbs: ['0-1(16.1%)', '0-0(14.4%)', '1-1(13.2%)', '1-0(11.8%)', '0-2(9.0%)'],
+            expectedGoals: { home: 0.82, away: 1.12 },
             predScores: ['0-0', '0-1'],
-            upsetScore: '1-0'
+            predScores: ['0-1', '0-0'],
         }
     },
     {
@@ -257,10 +257,10 @@ const MATCHUPS = [
             keyFactor: '梅西的终极表演 vs 佛得角的铁桶防守',
             tip: '阿根廷实力碾压，梅西有望继续刷新纪录''
             winProb: { home: 70.0, draw: 17.0, away: 13.0 },
-            scoreProbs: ['1-0(23.1%)', '0-0(16.9%)', '2-0(15.8%)', '1-1(10.5%)'],
-            expectedGoals: { home: 1.37, away: 0.41 },
+            scoreProbs: ['1-0(17.7%)', '2-0(15.7%)', '0-0(9.9%)', '1-1(9.4%)', '3-0(9.3%)'],
+            expectedGoals: { home: 1.78, away: 0.53 },
             predScores: ['1-0', '2-0'],
-            upsetScore: '0-1'
+            predScores: ['1-0', '2-0'],
         }
     },
     {
@@ -272,10 +272,10 @@ const MATCHUPS = [
             keyFactor: '哥伦比亚的超跑进攻 vs 加纳的身体对抗',
             tip: '南美德比，哥伦比亚实力占优''
             winProb: { home: 58.0, draw: 22.0, away: 20.0 },
-            scoreProbs: ['0-0(29.2%)', '1-0(24.0%)', '0-1(12.0%)', '1-1(8.5%)'],
-            expectedGoals: { home: 0.82, away: 0.41 },
+            scoreProbs: ['1-0(21.6%)', '0-0(20.4%)', '1-1(11.5%)', '2-0(11.5%)', '0-1(10.8%)'],
+            expectedGoals: { home: 1.06, away: 0.53 },
             predScores: ['0-0', '1-0'],
-            upsetScore: '0-1'
+            predScores: ['1-0', '0-0'],
         }
     },
 ];
