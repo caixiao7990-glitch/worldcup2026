@@ -130,12 +130,12 @@ const MATCHUPS = [
     },
     {
         id: 7, round: '1/16决赛 · 第七场', date: '7月1日', time: '09:00', venue: '待确认',
-        home: 'mex', away: 'ecu', score: '-', status: 'pending', winner: null, confidence: 0,
+        home: 'mex', away: 'ecu', score: '2-0', status: 'finished', winner: 'home', confidence: 65,
         analysis: {
             homeAdv: '墨西哥小组赛6-0韩国、捷克，防守零封对手',
             awayAdv: '厄瓜多尔小组赛2-2德国、库拉索，仅进2球',
             keyFactor: '墨西哥的零封防守 vs 厄瓜多尔的进攻乏力',
-            tip: '墨西哥防守占优，小比分概率大'',
+            tip: '基尼奥内斯传射建功，墨西哥晋级',
             winProb: { home: 65.0, draw: 20.0, away: 15.0 },
             scoreProbs: ['1-0(24.2%)', '0-0(18.5%)', '2-0(15.8%)', '1-1(9.2%)', '0-1(7.0%)'],
             expectedGoals: { home: 1.31, away: 0.38 },
