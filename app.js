@@ -187,21 +187,21 @@ function renderTomorrow() {
     });
 }
 
-// 渲染明天比赛的详细分析预测（今天已完场的不预测）
+// 渲染今天+明天比赛的详细分析预测
 function renderTomorrowPredictions() {
     const today = getTodayStr();
     const tomorrow = getTomorrowStr();
-    const tomorrowMatches = MATCHUPS.filter(m => m.date === tomorrow);
+    const allMatches = MATCHUPS.filter(m => m.date === today || m.date === tomorrow);
 
     const analysisContainer = document.getElementById('analysisCards');
     const section = document.getElementById('analysisSection');
 
-    if (tomorrowMatches.length === 0) {
+    if (allMatches.length === 0) {
         section.style.display = 'none';
         return;
     }
 
-    tomorrowMatches.forEach((match, i) => {
+    allMatches.forEach((match, i) => {
         const homeTeam = TEAMS.find(t => t.id === match.home);
         const awayTeam = TEAMS.find(t => t.id === match.away);
         const isToday = match.date === today;
@@ -295,7 +295,7 @@ function renderTomorrowPredictions() {
                 </div>
                 <div>
                     <span style="color:var(--gold);font-size:12px;margin-right:8px;">${match.date} ${match.time} 北京时间</span>
-                    <span style="color:var(--text-dim);font-size:13px;margin-right:8px;">明日 · 待开赛</span>
+                    <span style="color:var(--text-dim);font-size:13px;margin-right:8px;">${dateLabel} · ${match.status === 'finished' ? '已结束' : '待开赛'}</span>
                     <span style="cursor:pointer;color:var(--text-dim);font-size:18px;margin-left:12px;">▼</span>
                 </div>
             </div>
