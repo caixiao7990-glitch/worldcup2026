@@ -300,6 +300,38 @@ body {
     background: linear-gradient(90deg, var(--green), var(--gold));
 }
 
+/* ========== Date Selector ========== */
+.date-selector {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 8px;
+}
+
+.date-btn {
+    padding: 8px 16px;
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    background: var(--bg-card);
+    color: var(--text-muted);
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all .2s;
+}
+
+.date-btn:hover {
+    border-color: var(--gold);
+    color: var(--gold);
+}
+
+.date-btn.active {
+    background: var(--gold);
+    color: #000;
+    border-color: var(--gold);
+    font-weight: 700;
+}
+
 /* ========== Analysis Cards ========== */
 .analysis-cards {
     display: flex;
